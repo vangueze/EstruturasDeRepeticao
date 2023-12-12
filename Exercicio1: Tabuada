@@ -1,0 +1,45 @@
+/* Faca um algoritmo que calcule a tabuada de um numero introduzido do teclado,
+utilizando as tres estruturas de repeticao*/
+
+import java.util.Scanner;
+
+  public class Exercicio1{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num, resultado = 0;
+
+    System.out.println("Introduza o numero que pretende calcular : ");
+    num = s.nextInt();
+
+    //Ciclo FOR
+    for(byte i = 1; i <= 10; i++){
+      resultado = num * i;
+      System.out.println(num+" * "+i+" = "+resultado);
+    }
+
+    //Ciclo WHILE
+    byte j = 1;
+
+    while(j <= 10){
+      resultado = num * j;
+      System.out.println(num+" * "+j+" = "+resultado);
+      j++;
+    }
+
+    //Ciclo DO-WHILE
+    byte k = 1;
+
+    do{
+      resultado = num * k;
+      System.out.println(num+" * "+k+" = "+resultado);
+      k++;
+    }while(k <= 10);
+
+}
+}
+
+
+
+
