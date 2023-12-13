@@ -1,0 +1,33 @@
+public class Exercicio2{
+  public static void main(String[]args){
+
+  int soma = 0;
+
+  //Ciclo FOR
+  for(byte i = 1; i <= 15; i++){
+    soma+=i;
+  }
+
+  System.out.println("Soma dos numeros de 1 a 15 = "+soma);
+
+System.out.println("############################");
+  //Ciclo WHILE
+  byte j = 1;
+
+  while(j <= 15){
+    soma+=j;
+    j++;
+  }
+  System.out.println("Soma dos numeros de 1 a 15 = "+soma);
+
+System.out.println("############################");
+  //Ciclo DO-WHILE
+  byte k = 1;
+
+  do{
+    soma+=k;
+    k++;
+  }while(k <= 15);
+  System.out.println("Soma dos numeros de 1 a 15 = "+soma);
+}
+}
