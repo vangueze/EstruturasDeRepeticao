@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+  public class Exercicio3{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num, soma = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 10; i++){
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      soma+=num;
+    }
+    System.out.println("Soma = "+soma);
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 10){
+      System.out.println("Introduza o "+(j+1)+"o numero : ");
+      num = s.nextInt();
+
+      soma+=num;
+      j++;
+    }
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza o "+(k+1)+"o numero : ");
+      num = s.nextInt();
+
+      soma+=num;
+      k++;
+    }while(k < 10);
+}
+}
