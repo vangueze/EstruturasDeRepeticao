@@ -3,7 +3,7 @@ e exiba quantos numeros sao maiores do que 8 */
 
 import java.util.Scanner;
 
-  public class Main{
+  public class Exercicio7{
     public static void main(String[]args){
 
     Scanner s = new Scanner (System.in);
