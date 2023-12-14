@@ -1,0 +1,8 @@
+/* Escreva um algoritmo que leia uma sequencia de numeros do
+usuario e realize a soma desses numeros. Encerre a execucao 
+quando um numero negativo for digitado */
+
+import java.util.Scanner;
+
+  public class Exercicio10{
+    public static void main(String[]args){
