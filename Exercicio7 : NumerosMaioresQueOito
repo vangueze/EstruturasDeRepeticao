@@ -1,0 +1,52 @@
+/* Escreva um algoritmo que leia 20 numeros do usuario
+e exiba quantos numeros sao maiores do que 8 */
+
+import java.util.Scanner;
+
+  public class Main{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    int num, qtd = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 20; i++){
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num > 8){
+        qtd++;
+      }
+    }
+    System.out.println(qtd+" numeros sao maiores que 8");
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 20){
+      System.out.println("Introduza o "+(j+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num > 8){
+        qtd++;
+      }
+      j++;
+    }
+    System.out.println(qtd+" numeros sao maiores que 8");
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza o "+(k+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num > 8){
+        qtd++;
+      }
+      k++;
+    }while(k < 20);
+    System.out.println(qtd+" numeros sao maiores que 8");
+}
+}
