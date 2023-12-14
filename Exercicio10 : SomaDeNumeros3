@@ -6,3 +6,51 @@ import java.util.Scanner;
 
   public class Exercicio10{
     public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num, soma = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < length-1; i++){
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num < 0){
+        break;
+      }
+      soma+=num;
+    }
+    System.out.println("Soma = "+soma);
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j >= 0){
+      System.out.println("Introduza o "+(j+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num < 0){
+        break;
+      }
+      soma+= num;
+      j++;
+    }
+    System.out.println("Soma = "+soma);
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza o "+(k+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num < 0){
+        break;
+      }
+      soma+= num;
+      k++;
+    }while(num >= 0);
+    System.out.println("Soma = "+soma);
+}
+}
