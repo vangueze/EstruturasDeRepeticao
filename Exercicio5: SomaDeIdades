@@ -1,0 +1,45 @@
+//Leia a idade de 20 pessoas e axiba a soma das idades
+
+import java.util.Scanner;
+
+  public class Exercicio5{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int idade, soma = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 20; i++){
+      System.out.println("Introduza a "+(i+1)+"a idade : ");
+      idade = s.nextInt();
+
+      soma+=idade;
+    }
+    System.out.println("Soma = "+soma);
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 20){
+      System.out.println("Introduza a "+(j+1)+"a idade : ");
+      idade = s.nextInt();
+
+      soma+=idade;
+      j++;
+    }
+    System.out.println("Soma = "+soma);
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza a "+(k+1)+"a idade : ");
+      idade = s.nextInt();
+
+      soma+=idade;
+      k++;
+    }while(k < 20);
+    System.out.println("Soma = "+soma);
+}
+}
