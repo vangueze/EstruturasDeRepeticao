@@ -4,7 +4,7 @@ entre 101 e 200, e quantos sao maiores que 200 */
 
 import java.util.Scanner;
 
-  public class Exercicio10{
+  public class Exercicio11{
     public static void main(String[]args){
 
     int num, qtd1 = 0, qtd2, qtd3 = 0;
