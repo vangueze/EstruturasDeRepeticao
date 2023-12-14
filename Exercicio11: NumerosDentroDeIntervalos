@@ -1,0 +1,63 @@
+/* Faca um algoritmo que leia 20 numeros e ao final 
+escreva quantos estao entre 0 e 100, quantos estao 
+entre 101 e 200, e quantos sao maiores que 200 */
+
+import java.util.Scanner;
+
+  public class Exercicio10{
+    public static void main(String[]args){
+
+    int num, qtd1 = 0, qtd2, qtd3 = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 20; i++){
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num >= 0 && num <= 100){
+        qtd1++;
+      }else if(num >= 101 && num <= 200){
+        qtd2++;
+      }else{
+        qtd3++;
+      }
+    }
+    System.out.println(qtd1+" numeros estao entre 0 e 100\n"+qtd2+" numeros estao entre 101 e 200\n"+qtd3+" numeros sao maiores que 200");
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 20){
+      System.out.println("Introduza o "+(j+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num >= 0 && num <= 100){
+        qtd1++;
+      }else if(num >= 101 && num <= 200){
+        qtd2++;
+      }else{
+        qtd3++;
+      }
+      j++;
+    }
+    System.out.println(qtd1+" numeros estao entre 0 e 100\n"+qtd2+" numeros estao entre 101 e 200\n"+qtd3+" numeros sao maiores que 200");
+
+    //Ciclo DO-WHILE
+    byte k = 0; 
+
+    do{
+      System.out.println("Introduza o "+(k+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num >= 0 && num <= 100){
+        qtd1++;
+      }else if(num >= 101 && num <= 200){
+        qtd2++;
+      }else{
+        qtd3++;
+      }
+      k++;
+    }
+    System.out.println(qtd1+" numeros estao entre 0 e 100\n"+qtd2+" numeros estao entre 101 e 200\n"+qtd3+" numeros sao maiores que 200");      
+}
+}
