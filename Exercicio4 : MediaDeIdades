@@ -1,0 +1,48 @@
+//Leia a idade de 20 pessoas e exiba a media das idades
+
+import java.util.Scanner;
+  public class Exercicio4{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    byte idade, soma = 0;
+    float media = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 20; i++){
+      System.out.println("Introduza a idade da "+(i+1)+"a pessoa : ");
+      idade = s.nextByte();
+
+      soma+=idade;
+    }
+    media = soma / 20;
+    System.out.println("Media = "+media);
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 20){
+      System.out.println("Introduza a idade da "+(j+1)+"a pessoa : ");
+      idade = s.nextByte();
+
+      soma+=idade;
+      j++;
+    }
+    media = soma / 20;
+    System.out.println("Media = "+media);
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza a idade da "+(k+1)+"a pessoa : ");
+      idade = s.nextByte();
+
+      soma+=idade;
+      k++;
+    }while(k < 20);
+    media = soma / 20;
+    System.out.println("Media = "+media);
+}
+}
