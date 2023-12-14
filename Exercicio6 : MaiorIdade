@@ -1,0 +1,52 @@
+/* Leia a idade de 20 pessoas e exiba quantas pessoas 
+sao maiores de idade*/
+
+import java.util.Scanner;
+
+  public class Main{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    int idade, qtd = 0;
+
+    //Ciclo FOR
+    for(byte i = 0; i < 20; i++){
+      System.out.println("Introduza a "+(i+1)+"a idade : ");
+      idade = s.nextInt();
+
+      if(idade >= 18){
+        qtd++;
+      }
+    }
+    System.out.println(qtd+" pessoas sao maiores de idade");
+
+    //Ciclo WHILE
+    byte j = 0;
+
+    while(j < 20){
+      System.out.println("Introduza a "+(j+1)+"a idade : ");
+      idade = s.nextInt();
+
+      if(idade >= 18){
+        qtd++;
+      }
+      j++;
+    }
+    System.out.println(qtd+" pessoas sao maiores de idade");
+
+    //Ciclo DO-WHILE
+    byte k = 0;
+
+    do{
+      System.out.println("Introduza a "+(k+1)+"a idade : ");
+      idade = s.nextInt();
+
+      if(idade >= 18){
+        qtd++;
+      }
+      k++;
+    }while(k < 20);
+    System.out.println(qtd+" pessoas sao maiores de idade");
+  }
+}
