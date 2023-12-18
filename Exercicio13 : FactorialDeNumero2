@@ -1,0 +1,35 @@
+/* Escrever um algoritmo que leia um numero N que 
+indica quantos valores devem ser lidos a seguir.
+Para cada numero lido, mostre os valores lidos e 
+o factorial desses valores */
+
+import java.util.Scanner;
+
+  public class Exercicio13{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    int n, num, factorial = 0;
+
+    System.out.println("Introduza a quantidade de numeros : ");
+    n = s.nextInt();
+
+    byte i = 0;
+
+    do{
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      factorial = num;
+
+      for(byte j = 1; j < num; j++){
+        factorial*=j;
+      }
+      System.out.println(num+"! = "+factorial);
+      i++;
+    }while(i < n);
+  }
+}
+
+
