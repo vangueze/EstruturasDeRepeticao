@@ -1,0 +1,24 @@
+/* Crie um algoritmo que leia um numero
+e calcule o seu factorial */
+
+import java.util.Scanner;
+
+  public class Exercicio12{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    int num, factorial = 0;
+
+    System.out.println("Introduza um numero : ");
+    num = s.nextInt();
+
+    factorial = num;
+
+    for(byte i = 1; i < num; i++){
+      factorial*=i;
+    }
+
+    System.out.println(num+"! = "+factorial);
+  }
+}
