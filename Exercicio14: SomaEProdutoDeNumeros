@@ -1,0 +1,34 @@
+/* Crie um algoritmo que receba varios numeros inteiros
+e positivos e imprima o produto dos numeros impares 
+digitados e a soma dos numeros pares. O algoritmo 
+encerra quando o zero ou um numero negativo eh 
+digitado */
+
+import java.util.Scanner;
+
+  public class Exercicio14{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int num, soma = 0, produto = 0;
+
+    byte i = 0;
+
+    do{
+      System.out.println("Introduza o "+(i+1)+"o numero : ");
+      num = s.nextInt();
+
+      if(num <= 0){
+        break;
+      }else if(num % 2 == 0){
+          soma+=num;
+        }else{
+          produto*=num;
+        }
+      }while(num > 0);
+
+    System.out.println("Soma = "+soma+"\nProduto = "+produto);
+  }
+}
+  
