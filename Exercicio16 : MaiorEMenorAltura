@@ -1,0 +1,41 @@
+/* Desenvolver um algoritmo que leia a altura
+de 15 pessoas. Este programa devera calcular
+e mostrar a menor e a maior altura */
+
+import java.util.Scanner;
+
+  public class Exercicio16{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    float altura1, altura2, menor = 0, maior = 0, auxMenor = 0, auxMaior = 0;
+
+    System.out.println("Introduza a 1a altura : ");
+    altura1 = s.nextFloat();
+
+    menor = altura1;
+    maior = altura1;
+
+    for(byte i = 1; i < 15; i++){
+      System.out.println("Introduza a "+(i+1)+"a altura : ");
+      altura2 = s.nextFloat();
+
+      if(menor < altura2){
+        auxMenor = menor;
+      }else{
+        auxMenor = altura2;
+      }
+      menor = auxMenor;
+
+      if(maior > altura2){
+        auxMaior = maior;
+      }else{
+        auxMaior = altura2;
+      }
+      maior = auxMaior;
+
+    }
+    System.out.println("Menor altura = "+menor+"\nMaior altura = "+maior);
+  }
+}
