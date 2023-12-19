@@ -1,0 +1,47 @@
+/* Crie um algoritmo que realize a sequencia de Fibonnaci
+
+import java.util.Scanner;
+
+  public class Exercicio15{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int primeiro  = 0, segundo = 1, sequencia = 0;
+
+    for(byte i = 0; i <= 200; i++){
+      sequencia = primeiro + segundo;
+      segundo = primeiro;
+      primeiro = sequencia;
+      System.out.println(sequencia+" ");
+    }
+  }
+}
+import java.util.Scanner;
+
+  public class Main{
+    public static void main(String[]args){
+
+      Scanner s = new Scanner(System.in);
+
+      int lim, primeiro = 0, segundo = 1, sequencia = 0;
+
+      System.out.println("Introduza o limite da sequencia : ");
+      lim = s.nextInt();
+      
+      sequencia = primeiro + segundo;
+
+      System.out.print(sequencia+" ");
+
+      for(byte i = 0; i <= 20; i++){
+        while(sequencia < lim){
+          segundo = primeiro;
+          primeiro = sequencia;
+  
+          sequencia = primeiro + segundo;
+  
+          System.out.print(sequencia+" ");
+        }
+      }
+    }
+  }
