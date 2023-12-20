@@ -1,0 +1,44 @@
+/* Desenvolver um algoritmo que leia um numero nao determinado de 
+valores e calcule e escreva a media aritmetica dos valores lidos, 
+a quantidade de valores positivos, a quantidade de valores 
+negativos e o percentual de valores negativos e positivos */
+
+import java.util.Scanner;
+
+  public class Main{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+
+    int num, soma = 0, media = 0, qtdPositivos = 0, qtdNegativos = 0, contador = 0;
+    float percentNeg = 0; percentPos = 0;
+    char opcao;
+
+    do{
+      System.out.println("Pretende introduzir valores?(S/N)");
+      opcao = s.next().charAt(0);
+
+      if(opcao == 's'){
+        System.out.println("Introduza o "+(contador+1)+"o numero : ");
+        num = s.nextInt();
+
+        soma+=num;
+
+        media = soma / contador;
+
+        if(num > 0 ){
+          qtdPos++;
+        }else{
+          qtdNeg++;
+        }
+        contador++;
+      }else{
+        break;
+      }
+    }while(opcao == 's');
+      percentNeg = qtdNeg / contador;
+      percentPos = qtdPos / contador;
+
+      System.out.println("Media aritmetica = "+media+"nValores negativos = "+qtdNegativos+"nValores positivos = "+qtdPositivos+"\nPercentual de negativos = "+percentNeg+"\nPercentual de positivos = "+percentPos); 
+  }
+}
