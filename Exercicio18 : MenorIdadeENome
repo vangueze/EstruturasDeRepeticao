@@ -1,0 +1,39 @@
+/* Leia o nome e a idade de 10 pessoas e 
+exiba o nome da pessoa mais nova */
+
+import java.io.*;
+  public class Exercicio18{
+    public static void main(String[]args) throws IOException{
+
+    BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
+
+    int idade1, idade2, aux = 0;
+    String nome1 = "", nome2 = "", auxNome = "";
+
+    System.out.println("Introduza a 1a idade : ");
+    idade1 = Integer.parseInt(br.readLine());
+
+    System.out.println("Introduza o 1o nome : ");
+    nome1 = br.readLine();
+
+    for(byte i = 1; i < 10; i++){
+      System.out.println("Introduza a "+(i+1)+"a idade : ");
+      idade2 = Integer.parseInt(br.readLine());
+
+      System.out.println("Introduza o "+(i+1)+"o nome : ");
+      nome2 = br.readLine();
+
+      if(idade1 > idade2){
+        aux = idade2;
+        auxNome = nome2;
+      }else{
+        aux = idade1;
+        auxNome = nome1;
+      }
+      idade1 = aux;
+      nome1 = auxNome;
+    }
+    System.out.println("A menor idade sao "+aux+" anos e pertende a "+auxNome);
+  }
+}
+
