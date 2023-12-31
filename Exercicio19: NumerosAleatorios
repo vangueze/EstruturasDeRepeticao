@@ -1,0 +1,50 @@
+/* Utilizando a class Random, faca um loop
+que solicite ao usuario a introducao de um 
+numero. O loop termina quando o usuario 
+acertar o numero. Se o numero do usuario
+for menor que o numero aleatorio, escrever
+"MAIOR", e caso nao, escrever "MENOR". 
+Imprimir tambem o numero de tentativas
+falhadas*/
+
+import java.util.*;
+  public class Main{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner (System.in);
+    Random r = new Random();
+
+    int num, x, i = 0;
+
+    do{
+      System.out.println("Introduza um numero entre 0 e 9 : ");
+      num = s.nextInt();
+
+      //Gerador de numero aleatorio
+      x = r.nextInt(9);
+
+      System.out.println("Numero introduzido = "+num+"\nNumero aleatorio = "+x);
+
+      if (num > 9 || num < 0){
+        System.out.println("Numero fora do intervalo");
+      }else if(num > x){
+        System.out.println("MENOR");
+      }else if (num < x){
+        System.out.println("MAIOR");
+      }else{
+        System.out.println("Igual");
+      }
+      i++;
+      }while(num != x);
+
+      System.out.println("Foram realizadas "+i+" tentativas");
+    }
+  }
+
+
+
+
+
+
+
+
